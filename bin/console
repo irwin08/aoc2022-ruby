@@ -11,5 +11,7 @@ require "aoc2022/ruby"
 # require "pry"
 # Pry.start
 
+$LOAD_PATH.unshift "./lib"
+
 require "irb"
 IRB.start(__FILE__)
