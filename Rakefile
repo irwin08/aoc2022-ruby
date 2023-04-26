@@ -18,6 +18,18 @@ task :day1 do
   day1.solve
 end
 
+task :testref do
+  val1 = 1
+  val2 = 2
+  val3 = 3
+  val4 = 4
+  ref1 = [val1, val2, val3, val4]
+  p ref1
+  ref1[1] = 5
+  p ref1
+  p val2
+end
+
 require "rubocop/rake_task"
 
 RuboCop::RakeTask.new
